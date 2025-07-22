@@ -1,0 +1,25 @@
+Title: Guiding Principles for Ethical AI Deployment in Healthcare Systems
+
+1. Patient Consent Protocols
+Informed Consent: AI systems must clearly explain their role in patient care, including data usage and limitations, before use.
+
+Opt-Out Provision: Patients must be given the choice to decline AI-assisted decisions without compromising care quality.
+
+Dynamic Consent: Allow patients to modify their consent preferences as technology or care plans evolve.
+
+2. Bias Mitigation Strategies
+Diverse Training Data: Use datasets that reflect demographic and clinical diversity to avoid underrepresentation.
+
+Bias Audits: Perform regular audits using tools like AI Fairness 360 or Fairlearn to detect and mitigate disparities in diagnosis or treatment outcomes.
+
+Cross-Functional Review: Involve ethicists, data scientists, and healthcare providers in model evaluation.
+
+3. Transparency Requirements
+Model Explainability: Ensure AI recommendations are interpretable to both clinicians and patients. Avoid “black-box” systems in critical decisions.
+
+Disclosure: Providers must disclose when an AI tool is being used in diagnosis, triage, or treatment planning.
+
+Audit Trails: Maintain logs of AI decisions and data interactions for accountability and legal compliance.
+
+Conclusion:
+Ethical AI in healthcare is essential for safe, equitable, and trustworthy innovation. This policy ensures that patient rights, transparency, and fairness are embedded in every step of AI deployment.
