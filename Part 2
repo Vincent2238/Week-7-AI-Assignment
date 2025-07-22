@@ -1,1 +1,59 @@
+Case 1: Biased Hiring Tool
+Scenario
+Amazon developed an AI-powered recruiting tool intended to streamline the hiring process. However, the system was found to penalize female candidates, especially in technical roles, due to inherent biases.
 
+Identification of the Source of Bias
+The primary source of bias in Amazon’s tool was the training data, which was predominantly composed of resumes submitted over a ten-year period—mostly from male applicants. This data reflected existing gender disparities in the tech industry. Consequently, the model learned to favor male-associated patterns, penalizing resumes that included terms such as “women’s,” as in “women’s chess club” or “women’s coding society.” Furthermore, flaws in model design and feature selection—which failed to exclude gender-influencing variables—exacerbated the issue.
+
+Proposed Fixes to Improve Fairness
+Diversify and Balance the Training Data
+Train the model using a balanced dataset that includes equal representation from all genders and demographic groups to prevent historical bias from being replicated.
+
+Implement Bias Detection and Mitigation Tools
+Utilize tools such as IBM’s AI Fairness 360 or Microsoft’s Fairlearn to evaluate the model during development and identify disparate impacts across groups.
+
+Remove Sensitive Attributes During Preprocessing
+Mask gender-specific information and avoid features that may indirectly signal gender (e.g., club names, affiliations), ensuring that the model focuses on qualifications and experience.
+
+Suggested Fairness Evaluation Metrics
+Demographic Parity: Assess whether the tool recommends candidates at comparable rates across gender groups.
+
+Equal Opportunity: Measure true positive rates to ensure fairness in favorable outcomes (e.g., interview invitations).
+
+Disparate Impact Ratio: Compare selection rates to ensure no protected group is disproportionately disadvantaged (target ratio ≥ 0.8).
+
+Case 2: Facial Recognition in Policing
+Scenario
+Law enforcement agencies have increasingly adopted facial recognition technology (FRT) to identify suspects. However, multiple studies have shown that these systems often misidentify individuals from minority groups at significantly higher rates.
+
+Ethical Risks Associated with Use
+Wrongful Arrests and Detentions
+False matches may result in innocent individuals—particularly from marginalized communities—being arrested, leading to psychological, legal, and reputational harm.
+
+Privacy Violations
+Mass surveillance through facial recognition undermines the right to privacy, especially when used without public consent or oversight.
+
+Algorithmic Discrimination
+When trained on non-representative datasets, FRT systems may reinforce systemic racial biases, perpetuating inequities in law enforcement practices.
+
+Erosion of Public Trust
+The misuse or opaque deployment of FRT can diminish public confidence in the police and justice system, especially among already marginalized populations.
+
+Recommended Policies for Responsible Deployment
+Mandatory Accuracy and Bias Audits
+Require regular independent audits to evaluate system performance across racial, ethnic, and gender lines, and to publish audit results transparently.
+
+Legal and Procedural Safeguards
+Establish clear legal frameworks that restrict FRT use to specific, high-stakes investigations with appropriate warrants or judicial oversight.
+
+Human-in-the-Loop Protocols
+Ensure that facial recognition outputs are used solely as investigative leads and that final decisions rest with trained human officers, not automated systems.
+
+Transparency and Accountability Measures
+Agencies should disclose the vendors, models, use cases, and error rates of FRT systems, and provide redress mechanisms for individuals affected by misidentification.
+
+Public and Community Engagement
+Engage civil society organizations and the broader public in the policy-making process to foster accountability, inclusivity, and trust.
+
+Conclusion
+AI tools, when applied without ethical foresight, can perpetuate or even exacerbate societal biases. Ensuring fairness in AI systems—whether in hiring or law enforcement—requires deliberate intervention through better data practices, transparency, continuous monitoring, and regulatory frameworks.
