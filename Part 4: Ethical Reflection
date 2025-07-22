@@ -1,0 +1,14 @@
+Ethical Reflection: Ensuring Ethical AI in a Personal Project
+In a recent project, I developed a customer support chatbot powered by rule-based and natural language processing techniques. The chatbot was designed to assist users with product inquiries and troubleshoot basic issues. Although the tool offered efficiency and 24/7 availability, I recognized the ethical implications surrounding data privacy, fairness, and user transparency.
+
+To ensure adherence to ethical AI principles, I implemented several key measures:
+
+Privacy and Consent: The chatbot clearly informed users that their inputs were being processed for service improvement. Data logs were anonymized and stored securely, following the principle of data minimization.
+
+Bias Awareness: I tested the system with a diverse range of user queries—including those with different dialects and accents—to minimize bias in response accuracy. I plan to conduct further evaluations using fairness toolkits in future versions.
+
+Transparency and Explainability: The chatbot provided clear messages when it could not answer a question, avoiding misleading or fabricated responses. Users were always directed to a human agent for unresolved queries.
+
+Accountability: I maintained detailed documentation of all design decisions and data sources used, allowing for future audits.
+
+Moving forward, I will incorporate AI Fairness 360 and develop a clear governance framework for AI projects, particularly those involving sensitive data. Ethical AI is not a checkbox but a continuous commitment to responsible innovation.
