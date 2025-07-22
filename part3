@@ -1,0 +1,19 @@
+Bias Audit Report: COMPAS Recidivism Dataset
+This analysis audited the COMPAS dataset using IBM’s AI Fairness 360 toolkit to identify potential racial bias in risk assessments for criminal recidivism. The key focus was on disparities between African-American and Caucasian defendants, specifically in false positive rates (FPR)—where individuals were wrongly predicted to reoffend.
+
+Initial metrics revealed a significant FPR disparity, with African-American defendants receiving disproportionately higher false positive predictions compared to Caucasian counterparts. This confirms previously documented concerns that the COMPAS algorithm embeds racial bias, potentially leading to unjust outcomes such as prolonged incarceration or denial of parole.
+
+To address this, a Reweighing preprocessing technique was applied. Reweighing adjusts the instance weights in the training dataset to ensure fairness across demographic groups without modifying individual records. After retraining a logistic regression model on the reweighted data, there was a notable reduction in the false positive rate difference and disparate impact, though not a complete elimination of bias.
+
+Visualizations comparing FPR differences before and after reweighing clearly demonstrate the effectiveness of the mitigation step, although minor disparities persist. This highlights the importance of continuous bias monitoring, even post-correction.
+
+Remediation Recommendations
+Adopt Fair Preprocessing Techniques: Reweighing and similar methods should be standard in recidivism prediction pipelines.
+
+Establish Human Oversight: Risk scores should inform—not determine—judicial decisions.
+
+Regular Fairness Audits: Periodic evaluations using tools like AI Fairness 360 can ensure ongoing accountability.
+
+Transparency and Public Access: Make model logic and outcomes available to stakeholders, especially impacted communities.
+
+In conclusion, while technical fixes such as reweighing improve fairness, ethical deployment also requires institutional reform, transparency, and oversight.
